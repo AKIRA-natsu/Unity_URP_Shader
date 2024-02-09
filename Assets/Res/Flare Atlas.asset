@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d198d755c8aabf44b45dba8fa4976ab, type: 3}
+  m_Name: Flare Atlas
+  m_EditorClassIdentifier: 
+  Atlas: {fileID: 2800000, guid: 539933a8761e97d41b8c1544e599872f, type: 3}
+  SubTextures:
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.3955078, y: 0.11230469, z: 0, w: 0.8876953}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.2524414, y: 0.23730469, z: 0, w: 0.63964844}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.24658203, y: 0.24316406, z: 0, w: 0.3852539}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.24316406, y: 0.2397461, z: 0, w: 0.13623047}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.12646484, y: 0.123535156, z: 0, w: 0}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.11669922, y: 0.123535156, z: 0.13623047, w: 0}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.24609375, y: 0.24609375, z: 0.25585938, w: 0.6347656}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.24316406, y: 0.2265625, z: 0.2524414, w: 0.40185547}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.23632812, y: 0.23583984, z: 0.25927734, w: 0.13964844}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.12011719, y: 0.12988281, z: 0.25927734, w: 0}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.123535156, y: 0.12695312, z: 0.38867188, w: 0}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.23632812, y: 0.24902344, z: 0.51171875, w: 0.75097656}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.23291016, y: 0.23632812, z: 0.5151367, w: 0.5048828}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.23242188, y: 0.24316406, z: 0.5151367, w: 0.24560547}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.23632812, y: 0.057128906, z: 0.5083008, w: 0.17919922}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.22607422, y: 0.017089844, z: 0.5214844, w: 0.15966797}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.20947266, y: 0.037109375, z: 0.5151367, w: 0.12939453}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.19970703, y: 0.18603516, z: 0.76416016, w: 0.81396484}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.18115234, y: 0.1743164, z: 0.7636719, w: 0.62841797}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.14990234, y: 0.12548828, z: 0.7602539, w: 0.4897461}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.12841797, y: 0.12207031, z: 0.76416016, w: 0.36132812}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.12890625, y: 0.118652344, z: 0.7636719, w: 0.23632812}
+  - Atlas: {fileID: 11400000}
+    ScaleOffset: {x: 0.083496094, y: 0.18115234, z: 0.9165039, w: 0.43408203}
