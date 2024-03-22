@@ -53,7 +53,7 @@ Material:
     - _HorizonIntensity: 5.44
     - _MoonOffset: -0.128
     - _MoonRadius: 0.172
-    - _OffsetHorizon: 0.146
+    - _OffsetHorizon: 0
     - _SecNoiseScale: 0.075
     - _Speed: 2.3
     - _StarsCutoff: 0.099
@@ -70,10 +70,10 @@ Material:
     - _DayTopColor: {r: 0.5058824, g: 0.61960787, b: 0.9921569, a: 1}
     - _HorizonColorDay: {r: 0.90196085, g: 0.7176471, b: 0.5568628, a: 1}
     - _HorizonColorNight: {r: 0, g: 0.10196079, b: 0.5803922, a: 1}
-    - _MoonColor: {r: 1, g: 0.9843138, b: 0.89019614, a: 1}
+    - _MoonColor: {r: 2.9960787, g: 2.9490817, b: 2.6670978, a: 1}
     - _NightBottomColor: {r: 0, g: 0, b: 0.19999996, a: 1}
     - _NightTopColor: {r: 0, g: 0, b: 0, a: 1}
     - _StarsSkyColor: {r: 0, g: 0.07058824, b: 0.24313727, a: 1}
-    - _SunColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SunColor: {r: 2.9960783, g: 2.9960783, b: 2.9960783, a: 1}
     - _SunSet: {r: 0.6901961, g: 0.29411766, b: 0.03529412, a: 1}
   m_BuildTextureStacks: []

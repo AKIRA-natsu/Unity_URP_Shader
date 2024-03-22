@@ -16,11 +16,11 @@ Shader "Unlit/Stylized Skybox"
         _HorizonColorNight("Night Horizon Color", Color) = (0,0.8,1,1)
 
         [Header(Sun Settings)]
-		_SunColor("Sun Color", Color) = (1,1,1,1)
+		[HDR] _SunColor("Sun Color", Color) = (1,1,1,1)
 		_SunRadius("Sun Radius",  Range(0, 2)) = 0.1
 
 		[Header(Moon Settings)]
-		_MoonColor("Moon Color", Color) = (1,1,1,1)
+		[HDR] _MoonColor("Moon Color", Color) = (1,1,1,1)
 		_MoonRadius("Moon Radius",  Range(0, 2)) = 0.15
 		_MoonOffset("Moon Crescent",  Range(-1, 1)) = -0.1
 
