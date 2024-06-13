@@ -1,0 +1,49 @@
+﻿#pragma kernel CSMain
+
+Texture2D<float4> _InputTexture;
+RWTexture2D<float4> _FallTexture;
+RWTexture2D<float4> _OutputTexture;
+float _PixelsPercentage;
+
+float random(float2 st) 
+{
+	return frac(sin(dot(st.xy,float2(12.9898f, 78.233f)))*43758.5453123f);
+}
+
+[numthreads(8, 8, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    // 获取当前像素点的颜色
+    float4 pixelColor = _InputTexture.Load(int3(id.xy, 0));
+
+	float w;
+	float h;
+	_InputTexture.GetDimensions(w, h);
+	// 计算传入的像素数量百分比对应的像素位置
+	int percentPixels = w * h * _PixelsPercentage / 100;
+    int currentPixelIndex = id.y * w + id.x;
+
+    // 判断是否将像素点设为透明
+    if (pixelColor.a > 0 && currentPixelIndex > percentPixels)
+    {
+		if (_OutputTexture[id.xy].a != 0) {
+			_OutputTexture[id.xy] = float4(0, 0, 0, 0); // 设置当前像素透明
+			_FallTexture[id.xy] = pixelColor;
+		}
+	}
+    else
+    {
+        _OutputTexture[id.xy] = pixelColor; // 保持原像素颜色
+    }
+
+	// 获取当前掉落像素点的颜色
+    float4 fallColor = _FallTexture[id.xy];
+	_FallTexture[id.xy] = float4(0, 0, 0, 0);
+	if (id.y > 0) {
+		uint newX = id.x;
+		uint newY = id.y - 1;
+		_FallTexture[int2(newX, newY)] = fallColor;
+	}
+
+	_OutputTexture[id.xy] = _OutputTexture[id.xy] + _FallTexture[id.xy];
+}
